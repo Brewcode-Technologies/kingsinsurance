@@ -450,6 +450,26 @@ hr {
     animation: loaderspin 1.8s infinite ease-in-out;
     -webkit-animation: loaderspin 1.8s infinite ease-in-out;
 }
+.payment-card{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.wallet-bg-image{
+    background-image: url('/assets/images/wallet-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 30px 20px 0px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px 8px 0px 0px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+
 
 .loader .loader-icon {
     position: absolute;
@@ -2168,7 +2188,7 @@ hr {
 }
 
 .rs-footer__contact ul li a:hover {
-    color: #6b133f;
+    color: #fff;
 }
 
 .rs-footer__contact ul li a:hover::before {
@@ -3637,32 +3657,30 @@ hr {
     margin-top: 14px;
 }
 
-.rs-page-banner.rs-service-page-banner {
-    background-image: url(../images/service-page-banner.jpg);
+.rs-page-banner.rs-payment-page-banner {
+    background-image: url(../images/payment-hero.jpg);
 }
 
 .insurance-banner {
     background-image: url(../images/insurance.jpg);
 }
 
-.rs-page-banner.rs-service-page-banner-2 {
-    background-image: url(../images/page-banner-2.jpg);
-}
+
 
 .rs-page-banner.rs-service-page-banner-3 {
     background-image: url(../images/page-banner-3.jpg);
 }
 
 .rs-page-banner.rs-service-details-page-banner {
-    background-image: url(../images/insurance.jpg);
+    background-image: url(../images/insurance-bg-hero.jpg);
 }
 
-.rs-page-banner.rs-project-page-banner {
-    background-image: url(../images/page-banner-5.jpg);
+.rs-page-banner.rs-form-page-banner {
+    background-image: url(../images/form-hero.jpg);
 }
 
 .rs-page-banner.rs-team-page-banner {
-    background-image: url(../images/page-banner-6.jpg);
+    background-image: url(../images/team-hero.jpg);
 }
 
 .rs-page-banner.rs-tab-style-2-page-banner {
@@ -3678,7 +3696,7 @@ hr {
 }
 
 .rs-page-banner.rs-contact-page-banner {
-    background-image: url(../images/page-banner-10.jpg);
+    background-image: url(../images/contact-hero.jpg);
 }
 
 
@@ -5669,17 +5687,24 @@ hr {
 .rs-service__item .rs-content .rs-icon svg {
     width: 30px;
 }
-
-.rs-service__item .rs-content .title {
+.title-p{
     font-size: 26px;
     line-height: 36px;
     margin-top: 22px;
+    margin-bottom: 13px;  
+}
+
+.rs-service__item .rs-content .title {
+    font-size: 26px !important;
+    line-height: 36px !important;
+    margin-top: 22px !important;
     margin-bottom: 13px;
+    color: #6b133f;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .rs-service__item .rs-content .title {
-        font-size: 22px;
+        font-size: 18px;
     }
 }
 
@@ -5731,16 +5756,16 @@ hr {
     transform: translate(-50%, -50%);
     height: 8px;
     width: 8px;
-    background: #d9d9d9;
+    background: #6b133f;
     border-radius: 50%;
 }
 
 .rs-service__slider .owl-dots .owl-dot.active {
-    border-color: #42806b;
+    border-color: #6b133f;
 }
 
 .rs-service__slider .owl-dots .owl-dot.active::before {
-    background: #42806b;
+    background: #6b133f;
 }
 
 .rs-service-2 {
@@ -6109,9 +6134,7 @@ hr {
     transition: all ease 0.3s;
 }
 
-.rs-service-3__item .rs-content .title a:hover {
-    color: #e11631;
-}
+
 
 .rs-service-3__item .rs-content>a {
     margin-top: 25px;
@@ -6133,8 +6156,8 @@ hr {
 }
 
 .rs-service-3__item .rs-content>a:hover {
-    background: #e11631;
-    border-color: #e11631;
+    background: #6b133f;
+    border-color: #6b133f;
 }
 
 .rs-service-3__item:hover .rs-thumb img {
@@ -14293,7 +14316,7 @@ input::-moz-focus-outer {
 }
 
 .rs-agent__content .title {
-    color: #ffffff;
+    color: #6b133f;
     font-size: 40px;
     line-height: 52px;
 }
@@ -14362,12 +14385,12 @@ input::-moz-focus-outer {
 
 .rs-agent.rs-agent-about-page {
     background-image: none;
-    background-color: #6b133f;
+    background-color: #ffffff;
 }
 
 .rs-agent.rs-agent-about-page .rs-agent__content a {
-    background: #ffffff;
-    color: #6b133f;
+    background: #6b133f;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 700;
 }
@@ -14382,9 +14405,17 @@ input::-moz-focus-outer {
     color: #ffffff;
 }
 
-.rs-agent.rs-agent-about-page .rs-agent__content.item-2 a:hover {
-    background: #ffffff;
+.form-text{
     color: #6b133f;
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 10px;
+    margin-bottom: 33px;
+}
+
+.rs-agent.rs-agent-about-page .rs-agent__content.item-2 a:hover {
+    background: #fff;
+    color: #ffff;
 }
 
 
@@ -14808,7 +14839,7 @@ input::-moz-focus-outer {
 }
 
 .rs-contact-page__info {
-    padding: 30px 80px 50px 30px;
+    padding: 30px 0px 50px 30px;
     background: #eef5f5;
 }
 
@@ -14962,26 +14993,25 @@ input::-moz-focus-outer {
     height: 56px;
     border-radius: 6px;
     padding-left: 20px;
-    background: #275f51fa;
+    color: #000;
     border: 0;
     font-size: 16px;
-    color: #ffffff;
     font-family: "Epilogue", sans-serif;
 }
 
 .rs-contact-form-area__box .input-box input::-moz-placeholder {
     opacity: 0.7;
-    color: #ffffff;
+    color: #000;
 }
 
 .rs-contact-form-area__box .input-box input:-ms-input-placeholder {
     opacity: 0.7;
-    color: #ffffff;
+    color: #000;
 }
 
 .rs-contact-form-area__box .input-box input::placeholder {
     opacity: 0.7;
-    color: #ffffff;
+    color: #000;
 }
 
 .rs-contact-form-area__box .input-box textarea {
@@ -14990,26 +15020,25 @@ input::-moz-focus-outer {
     border-radius: 6px;
     padding-left: 20px;
     padding-top: 15px;
-    background: #275f51fa;
+    color: #000;
     border: 0;
     font-size: 16px;
-    color: #ffffff;
     font-family: "Epilogue", sans-serif;
 }
 
 .rs-contact-form-area__box .input-box textarea::-moz-placeholder {
     opacity: 0.7;
-    color: #ffffff;
+    color: #000;
 }
 
 .rs-contact-form-area__box .input-box textarea:-ms-input-placeholder {
     opacity: 0.7;
-    color: #ffffff;
+    color: #000;
 }
 
 .rs-contact-form-area__box .input-box textarea::placeholder {
     opacity: 0.7;
-    color: #ffffff;
+    color: #000;
 }
 
 .rs-contact-form-area__box .input-box button {
@@ -15021,6 +15050,11 @@ input::-moz-focus-outer {
     text-align: center;
     border-radius: 2px;
     display: block;
+}
+.input-box button:hover{
+    background-color: #fff !important;
+    color: #6b133f;
+    border-radius: 8px;
 }
 
 .rs-contact-form-area__box .input-box button:hover {
