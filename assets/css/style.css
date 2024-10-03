@@ -6328,6 +6328,14 @@ hr {
   margin-bottom: 13px;
   color: #6b133f;
 }
+.commercial-products-title {
+  font-size: 26px !important;
+  line-height: 36px !important;
+  margin-top: 22px !important;
+  margin-bottom: 13px;
+  color: #6b133f;
+  font-weight: bold;
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .rs-service__item .rs-content .title {
@@ -14291,7 +14299,7 @@ input::-moz-focus-outer {
 }
 
 .rs-team-details__thumb .rs-social ul li a:hover {
-  color: #6b133f;
+  color: #ffffff;
 }
 
 .rs-team-details__thumb .rs-social ul li:nth-child(3) a {
