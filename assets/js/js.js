@@ -10,3 +10,7 @@ window.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+function showId(clickedId) {
+  var displayElement = document.getElementById("displayId");
+    displayElement.innerHTML = "Clicked ID: " + clickedId;
+}
