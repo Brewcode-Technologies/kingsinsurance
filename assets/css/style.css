@@ -1932,7 +1932,7 @@ hr {
   opacity: 0;
   visibility: hidden;
   cursor: pointer;
-  cursor: url(https://demo.rstheme.com/wordpress/insurigo/wp-content/plugins/rselements/widgets/header-offcanvas/close.png),
+  cursor: url(../images/close.png),
     auto;
 }
 
