@@ -455,7 +455,7 @@ hr {
 }
 
 .wallet-bg-image {
-  background-image: url("/assets/images/wallet-image.jpg");
+  background-image: url("../images/wallet-image.jpg");
   background-size: cover;
   background-position: center;
   height: 400px;
