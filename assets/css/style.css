@@ -1,6 +1,4 @@
-/*--------------------------------------------------------------
-## All Color Variable
-----------------------------------------------------------------*/
+
 @import url("../../../css2");
 :root {
   --white: #fff;
@@ -182,9 +180,6 @@ textarea {
   transition: all 0.4s ease;
 }
 
-/*--------------------------------------------------------------
-  2. Preloader
-----------------------------------------------------------------*/
 .cs_preloader {
   position: fixed;
   display: -webkit-box;
@@ -267,9 +262,7 @@ textarea {
             transform: rotate(360deg);
   }
 }
-/*--------------------------------------------------------------
-  3. Spacing
-----------------------------------------------------------------*/
+
 @media screen and (min-width: 992px) {
   .cs_height_1 {
     height: 1px;
@@ -1354,9 +1347,7 @@ textarea {
     height: 180px;
   }
 }
-/*--------------------------------------------------------------
-  4. General
-----------------------------------------------------------------*/
+
 .container-fluid {
   padding-left: 75px;
   padding-right: 75px;
@@ -2057,7 +2048,6 @@ label {
           transform: scaleX(1) rotateY(180deg);
 }
 
-/* Start Accordion */
 .cs_accordians.cs_style_1 .cs_accordian_title {
   margin-bottom: 0;
   -webkit-transition: all 0.3s ease;
@@ -2102,7 +2092,6 @@ label {
   right: 10px;
 }
 
-/* End Accordion */
 .cs_section_heading.cs_style_1 .cs_section_subtitle,
 .cs_section_heading.cs_style_2 .cs_section_subtitle,
 .cs_section_heading.cs_style_3 .cs_section_subtitle {
@@ -2301,6 +2290,7 @@ label {
   width: 50vw;
   margin-left: calc(-50vw + 100%);
   padding-right: 55px;
+  margin-top: 55px;
 }
 @media (max-width: 991px) {
   .cs_why_choose_us_1 .cs_why_choose_us_thumb {
@@ -4022,9 +4012,7 @@ select.cs_insurance_input {
     width: 100%;
   }
 }
-/*--------------------------------------------------------------
-  5. Slider
-----------------------------------------------------------------*/
+
 .cs_slider {
   position: relative;
 }
@@ -4807,9 +4795,7 @@ select.cs_insurance_input {
           transition-delay: 0.45s;
 }
 
-/*--------------------------------------------------------------
-  6. Video Modal
-----------------------------------------------------------------*/
+
 .cs-pd-video .cs_video_open,
 .cs-sample-img .cs_video_open {
   position: absolute;
@@ -5002,10 +4988,6 @@ select.cs_insurance_input {
   overflow: hidden;
 }
 
-/*End Video Popup*/
-/*--------------------------------------------------------------
-7. Header
-----------------------------------------------------------------*/
 .cs_site_header {
   position: relative;
   z-index: 101;
@@ -5971,7 +5953,6 @@ select.cs_insurance_input {
     -webkit-transform: translateY(-32px);
             transform: translateY(-32px);
   }
-  /*Mobile Menu Button*/
   .cs_menu_toggle {
     display: inline-block;
     width: 30px;
@@ -6127,7 +6108,6 @@ select.cs_insurance_input {
   color: var(--white);
 }
 
-/* Start Hamburger Menu */
 .cs_hamburger_active {
   overflow: hidden;
 }
@@ -6351,10 +6331,7 @@ select.cs_insurance_input {
   padding: 25px 0;
 }
 
-/* End Hamburger Menu */
-/*--------------------------------------------------------------
-  8. Footer
-----------------------------------------------------------------*/
+
 .cs_footer_main {
   padding: 90px 0 50px;
 }
@@ -6707,9 +6684,6 @@ select.cs_insurance_input {
   }
 }
 
-/*--------------------------------------------------------------
-  9. Sidebar
-----------------------------------------------------------------*/
 @media (min-width: 992px) {
   .cs_right_sidebar {
     padding-left: 40px;
@@ -6914,9 +6888,7 @@ select.cs_insurance_input {
     margin-bottom: 40px;
   }
 }
-/*--------------------------------------------------------------
-  10. Hero
-----------------------------------------------------------------*/
+
 .cs_hero_phone_number {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7512,7 +7484,7 @@ select.cs_insurance_input {
   right: 0;
   bottom: 0;
   height: calc(100% - 156px);
-  width: 40%;
+  width: 50%;
   border-radius: 250px 0 0 0;
   overflow: hidden;
 }
@@ -7526,9 +7498,9 @@ select.cs_insurance_input {
 }
 .cs_hero.cs_style_5 .cs_hero_img img {
   height: 100%;
-  width: 100%;
+  width: 80%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .cs_hero.cs_style_5 .cs_hero_btns {
   display: -webkit-box;
@@ -8039,9 +8011,7 @@ select.cs_insurance_input {
             transform: translate(-50%, -50%) scale(0.8);
   }
 }
-/*--------------------------------------------------------------
-  11. Banner
-----------------------------------------------------------------*/
+
 .cs_banner.cs_style_1 {
   min-height: 650px;
   display: -webkit-box;
@@ -8103,9 +8073,6 @@ select.cs_insurance_input {
   }
 }
 
-/*--------------------------------------------------------------
-  12. Iconbox
-----------------------------------------------------------------*/
 .cs_iconbox.cs_style_1 {
   position: relative;
   padding-bottom: 25px;
@@ -8245,9 +8212,7 @@ select.cs_insurance_input {
   margin-bottom: 10px;
 }
 
-/*--------------------------------------------------------------
-  13. Posts
-----------------------------------------------------------------*/
+
 .cs_post.cs_style_1 .cs_post_thumb {
   display: block;
   border-radius: 0 100px 0 0;
@@ -8355,9 +8320,6 @@ select.cs_insurance_input {
   overflow: hidden;
 }
 
-/*--------------------------------------------------------------
-  14. CTA
-----------------------------------------------------------------*/
 .cs_cta.cs_style_1 {
   overflow: hidden;
 }
@@ -8571,9 +8533,6 @@ select.cs_insurance_input {
   color: var(--primary);
 }
 
-/*--------------------------------------------------------------
-  15. Testimonial
-----------------------------------------------------------------*/
 .cs_testimonial_1_1_quote {
   position: absolute;
   bottom: 50px;
@@ -8622,9 +8581,7 @@ select.cs_insurance_input {
   left: -65px;
 }
 
-/*--------------------------------------------------------------
-  17. Counter
-----------------------------------------------------------------*/
+
 .odometer-inside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8740,9 +8697,6 @@ select.cs_insurance_input {
   }
 }
 
-/*--------------------------------------------------------------
-  18. Casestudie
-----------------------------------------------------------------*/
 .cs_case_study.cs_style_1 {
   height: 520px;
   position: relative;
@@ -8914,9 +8868,7 @@ select.cs_insurance_input {
   color: var(--accent);
 }
 
-/*--------------------------------------------------------------
-  19. Team
-----------------------------------------------------------------*/
+
 .cs_team.cs_style_1 {
   height: 770px;
   position: relative;
@@ -9040,9 +8992,6 @@ select.cs_insurance_input {
   opacity: 1;
 }
 
-/*--------------------------------------------------------------
-  20. Imagebox
-----------------------------------------------------------------*/
 .cs_image_box_1_list li:not(:last-child) {
   border-bottom: 1px solid #42585d;
   padding-bottom: 45px;
@@ -9241,9 +9190,6 @@ select.cs_insurance_input {
           transform: scale(1.07) translateX(6px);
 }
 
-/*--------------------------------------------------------------
-  21. Pricing
-----------------------------------------------------------------*/
 .cs_pricing_table.cs_style_1 {
   border-radius: 5px;
   border: 1px solid var(--primary);
@@ -9328,9 +9274,6 @@ select.cs_insurance_input {
   padding-bottom: 10px;
 }
 
-/*--------------------------------------------------------------
-  22. Card
-----------------------------------------------------------------*/
 .cs_card.cs_style_1 .cs_card_img,
 .cs_card.cs_style_4 .cs_card_img {
   margin-bottom: 26px;
@@ -9913,4 +9856,4 @@ select.cs_insurance_input {
   .cs_landing_feature_left_img .cs_landing_feature_text_box {
     padding-left: 0px;
   }
-}/*# sourceMappingURL=style.css.map */
+}

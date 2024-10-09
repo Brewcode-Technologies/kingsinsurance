@@ -1,42 +1,6 @@
 (function ($) {
   'use strict';
 
-  /*
-  |--------------------------------------------------------------------------
-  | Template Name: Bione
-  | Author: Laralink
-  | Version: 1.0.0
-  |--------------------------------------------------------------------------
-  |--------------------------------------------------------------------------
-  | TABLE OF CONTENTS:
-  |--------------------------------------------------------------------------
-  |
-  | 1. Preloader
-  | 2. Mobile Menu
-  | 3. Sticky Header
-  | 4. Dynamic Background
-  | 5. Slick Slider
-  | 6. Horizonta Full Screen Swiper Slider
-  | 7. Vertical Full Screen Swiper Slider
-  | 8. Parallax Swiper Slider
-  | 9. Modal Video
-  | 10. Scroll Up
-  | 11. Ripple
-  | 12. Counter Animation
-  | 13. Accordian
-  | 14. Tabs
-  | 15. Hover To Active
-  | 16. Progress Bar
-  | 17. Review
-  | 18. Shining Active
-  | 19. Hobble Effect
-  | 20. Scroll Slider
-  |
-  */
-
-  /*--------------------------------------------------------------
-    Scripts initialization
-  --------------------------------------------------------------*/
   $.exists = function (selector) {
     return $(selector).length > 0;
   };
@@ -78,17 +42,13 @@
     showScrollUp();
   });
 
-  /*--------------------------------------------------------------
-    1. Preloader
-  --------------------------------------------------------------*/
+
   function preloader() {
     $('.cs_preloader').fadeOut();
     $('cs_preloader_in').delay(150).fadeOut('slow');
   }
 
-  /*--------------------------------------------------------------
-    2. Mobile Menu
-  --------------------------------------------------------------*/
+ 
   function mainNav() {
     $('.cs_nav').append('<span class="cs_menu_toggle"><span></span></span>');
     $('.menu-item-has-children').append(
@@ -113,7 +73,6 @@
       $(this).parent().toggleClass('active');
     });
 
-    /* Side Nav */
     $('.cs_hamburger_info_btn').on('click', function () {
       $('.cs_side_header').addClass('active');
       $('html').addClass('cs_hamburger_active');
@@ -123,7 +82,6 @@
       $('html').removeClass('cs_hamburger_active');
     });
 
-    /* Hamburger Menu */
     $('.cs_hamburger_menu .menu-item-has-children>a').on('click', function (e) {
       e.preventDefault();
       $(this).siblings('ul').slideToggle();
@@ -140,9 +98,7 @@
     });
   }
 
-  /*--------------------------------------------------------------
-    3. Sticky Header
-  --------------------------------------------------------------*/
+
   function stickyHeader() {
     var $window = $(window);
     var lastScrollTop = 0;
@@ -170,9 +126,6 @@
     });
   }
 
-  /*--------------------------------------------------------------
-    4. Dynamic Background
-  --------------------------------------------------------------*/
   function dynamicBackground() {
     $('[data-src]').each(function () {
       var src = $(this).attr('data-src');
@@ -181,39 +134,26 @@
       });
     });
   }
-
-  /*--------------------------------------------------------------
-    5. Slick Slider
-  --------------------------------------------------------------*/
   function slickInit() {
     if ($.exists('.cs_slider')) {
       $('.cs_slider').each(function () {
-        // Slick Variable
         var $ts = $(this).find('.cs_slider_container');
         var $slickActive = $(this).find('.cs_slider_wrapper');
-        // Auto Play
         var autoPlayVar = parseInt($ts.attr('data-autoplay'), 10);
-        // Auto Play Time Out
         var autoplaySpdVar = 3000;
         if (autoPlayVar > 1) {
           autoplaySpdVar = autoPlayVar;
           autoPlayVar = 1;
         }
-        // Slide Change Speed
         var speedVar = parseInt($ts.attr('data-speed'), 10);
-        // Slider Loop
         var loopVar = Boolean(parseInt($ts.attr('data-loop'), 10));
-        // Slider Center
         var centerVar = Boolean(parseInt($ts.attr('data-center'), 10));
-        // Variable Width
         var variableWidthVar = Boolean(
           parseInt($ts.attr('data-variable-width'), 10),
         );
-        // Pagination
         var paginaiton = $(this)
           .find('.cs_pagination')
           .hasClass('cs_pagination');
-        // Slide Per View
         var slidesPerView = $ts.attr('data-slides-per-view');
         if (slidesPerView == 1) {
           slidesPerView = 1;
@@ -225,11 +165,9 @@
           var smPoint = parseInt($ts.attr('data-sm-slides'), 10);
           var xsPoing = parseInt($ts.attr('data-xs-slides'), 10);
         }
-        // Fade Slider
         var fadeVar = parseInt($($ts).attr('data-fade-slide'));
         fadeVar === 1 ? (fadeVar = true) : (fadeVar = false);
 
-        // Slick Active Code
         $slickActive.slick({
           autoplay: autoPlayVar,
           dots: paginaiton,
@@ -277,9 +215,7 @@
     }
   }
 
-  /*--------------------------------------------------------------
-    6. Horizonta Full Screen Swiper Slider
-  --------------------------------------------------------------*/
+
   function fullScreenHorizontalSlider() {
     if ($.exists('.cs_fullscreen_horizontal_slider')) {
       var swiper = new Swiper('.cs_fullscreen_horizontal_slider', {
@@ -294,9 +230,6 @@
     }
   }
 
-  /*--------------------------------------------------------------
-    7. Vertical Full Screen Swiper Slider
-  --------------------------------------------------------------*/
   function fullScreenVerticalSlider() {
     if ($.exists('.cs_fullscreen_vertical_slider')) {
       var swiper = new Swiper('.cs_fullscreen_vertical_slider', {
@@ -316,9 +249,7 @@
     }
   }
 
-  /*--------------------------------------------------------------
-    8. Parallax Swiper Slider
-  --------------------------------------------------------------*/
+
   function parallaxSwiperSlider() {
     if ($.exists('.cs_parallax_slider')) {
       let mainSliderSelector = '.cs_parallax_slider',
@@ -376,9 +307,7 @@
     }
   }
 
-  /*--------------------------------------------------------------
-    9. Modal Video
-  --------------------------------------------------------------*/
+
   function modalVideo() {
     if ($.exists('.cs_video_open')) {
       $('body').append(`
@@ -417,9 +346,7 @@
     }
   }
 
-  /*--------------------------------------------------------------
-    10. Scroll Up
-  --------------------------------------------------------------*/
+
   function scrollUp() {
     $('.cs_scrollup').on('click', function (e) {
       e.preventDefault();
@@ -432,7 +359,6 @@
     });
   }
 
-  /* For Scroll Up */
   function showScrollUp() {
     let scroll = $(window).scrollTop();
     if (scroll >= 350) {
@@ -442,9 +368,7 @@
     }
   }
 
-  /*--------------------------------------------------------------
-    11. Ripple
-  --------------------------------------------------------------*/
+
   function rippleInit() {
     if ($.exists('.cs_ripple_activate')) {
       $('.cs_ripple_activate').each(function () {
@@ -457,9 +381,7 @@
     }
   }
 
-  /*--------------------------------------------------------------
-    12. Counter Animation
-  --------------------------------------------------------------*/
+
   function counterInit() {
     if ($.exists('.odometer')) {
       $(window).on('scroll', function () {
@@ -480,9 +402,7 @@
     }
   }
 
-  /*--------------------------------------------------------------
-    13. Accordian
-  --------------------------------------------------------------*/
+
   function accordian() {
     $('.cs_accordian').children('.cs_accordian_body').hide();
     $('.cs_accordian.active').children('.cs_accordian_body').show();
@@ -499,15 +419,12 @@
         .siblings()
         .find('.cs_accordian_body')
         .slideUp(250);
-      /* Accordian Active Class */
       $(this).parents('.cs_accordian').addClass('active');
       $(this).parent('.cs_accordian').siblings().removeClass('active');
     });
   }
 
-  /*--------------------------------------------------------------
-    14. Tabs
-  --------------------------------------------------------------*/
+
   function tabs() {
     $('.cs_tabs .cs_tab_links a').on('click', function (e) {
       var currentAttrValue = $(this).attr('href');
@@ -520,9 +437,7 @@
     });
   }
 
-  /*--------------------------------------------------------------
-    15. Hover To Active
-  --------------------------------------------------------------*/
+
   function hoverActive() {
     $('.cs_hover_active .cs_case_study_in').hover(function () {
       $(this)
@@ -533,9 +448,7 @@
     });
   }
 
-  /*--------------------------------------------------------------
-    16. Progress Bar
-  --------------------------------------------------------------*/
+
   function progressBar() {
     $('.cs_progress').each(function () {
       var progressPercentage = $(this).data('progress') + '%';
@@ -543,9 +456,7 @@
     });
   }
 
-  /*--------------------------------------------------------------
-    17. Review
-  --------------------------------------------------------------*/
+
   function review() {
     $('.cs_rating').each(function () {
       var review = $(this).data('rating');
@@ -553,9 +464,7 @@
       $(this).find('.cs_rating_percentage').css('width', reviewVal);
     });
   }
-  /*--------------------------------------------------------------
-    18. Shining Active
-  --------------------------------------------------------------*/
+
   function shiningActive() {
     $('.cs_shining .cs_shining_btn').hover(
       function () {
@@ -573,9 +482,7 @@
     );
   }
 
-  /*--------------------------------------------------------------
-    19. Hobble Effect
-  --------------------------------------------------------------*/
+
   function hobbleEffect() {
     $(document)
       .on('mousemove', '.cs_hobble', function (event) {
@@ -617,17 +524,13 @@
       });
   }
 
-  /*--------------------------------------------------------------
-    20. Scroll Slider
-  --------------------------------------------------------------*/
+
   function scrollSliderActive() {
     if ($.exists('.cs_scroll_slide') && $(window).width() > 991) {
       var ctrl = new ScrollMagic.Controller({});
-      /* This each sets the animation */
       $('.cs_scroll_slide').each(function (index, element) {
         $(':root').css('scroll-behavior', 'initial');
 
-        /* scroll up */
         new ScrollMagic.Scene({
           triggerHook: 0,
           triggerElement: this,
@@ -647,7 +550,6 @@
           })
           .addTo(ctrl);
 
-        /* scroll down */
         new ScrollMagic.Scene({
           triggerElement: this,
           triggerHook: 0,
@@ -679,4 +581,4 @@
     var currentYear = new Date().getFullYear();
     $('.cs_copyright_year').text(currentYear);
   }
-})(jQuery); // End of use strict
+})(jQuery); 

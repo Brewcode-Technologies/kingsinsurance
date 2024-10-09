@@ -1,24 +1,18 @@
-/*!
- * https://github.com/umarwebdeveloper/jquery-css-skills-bar
- * Author: @umarwebdeveloper
- * Licensed under the MIT license
- */
+
  
 (function ( $ ) {
  
     $.fn.skillBars = function( options ) {
  
         var settings = $.extend({
-			from: 0,  			// number start
-			to: false,			// number end
-			speed: 1000,  		// how long it should take to count between the target numbers
-			interval: 100,	  // how often the element should be updated
-			decimals: 0,		  // the number of decimal places to show
-			onUpdate: null,	  // callback method for every time the element is updated,
-			onComplete: null,	  // callback method for when the element finishes updating
-			/*onComplete: function(from) {
-                console.debug(this);
-            }*/
+			from: 0,  			
+			to: false,		
+			speed: 1000,  		
+			interval: 100,	  
+			decimals: 0,		  
+			onUpdate: null,	  
+			onComplete: null,	  
+			
 			classes:{
 				skillBarBar : '.skillbar-bar',
 				skillBarPercent : '.skill-bar-percent',
