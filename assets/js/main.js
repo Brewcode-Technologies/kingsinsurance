@@ -582,3 +582,19 @@
     $('.cs_copyright_year').text(currentYear);
   }
 })(jQuery); 
+
+
+// Get references to the slider and the value display elements
+const balanceSlider = document.getElementById("balanceSlider");
+const selectedValue = document.getElementById("selectedValue");
+
+// Function to update the displayed value when the slider is moved
+balanceSlider.oninput = function() {
+    // Update the displayed value dynamically as the slider is adjusted
+    selectedValue.textContent = this.value;
+    
+    // Dynamically update the background of the slider to show the progress
+    let percentage = (this.value - this.min) / (this.max - this.min) * 100;
+    this.style.background = `linear-gradient(90deg, #f03e32 ${percentage}%, #d3d3d3 ${percentage}%)`;
+}
+
