@@ -566,7 +566,7 @@ textarea {
     height: 99px;
   }
   .cs_height_100 {
-    height: 100px;
+    height: 84px;
   }
   .cs_height_101 {
     height: 101px;
@@ -621,6 +621,9 @@ textarea {
   }
   .cs_height_118 {
     height: 118px;
+  }
+  .payment-portal-heading{
+    font-size: 40px !important;
   }
   .cs_height_119 {
     height: 119px;
@@ -3681,7 +3684,7 @@ select.cs_insurance_input {
 }
 
 .cs_faq_heading {
-  padding: 13px 20px;
+  padding: 13px 10px;
   margin-bottom: 20px;
 }
 
@@ -5547,8 +5550,9 @@ select.cs_insurance_input {
 }
 
 .cs_site_header_spacing_100 {
-  height: 100px;
+  height: 84px;
 }
+
 
 @media screen and (max-width: 1199px) {
   .cs_site_header.cs_style_1 .cs_top_header_in {
@@ -9884,8 +9888,7 @@ select.cs_insurance_input {
 
 @media all and (min-width: 1200px) {
   .cs_fs_120 {
-    font-size: 86px !important;
-    padding: 30px;
+    font-size: 94px !important;
   }
   .cs_hero.cs_style_5 .cs_hero_img img{
     object-fit: cover;
@@ -9950,3 +9953,4 @@ label {
   margin-top: 10px;
   font-size: 16px;
 }
+
