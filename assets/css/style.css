@@ -10063,7 +10063,8 @@ label {
 @media (max-width: 430px) {
  .cs-why-choose-image, .cs_about_thumb_1,.team-img{
     background-size: contain !important;
-    
+    width: 100%;  
+    height: auto;
   }
   
 
