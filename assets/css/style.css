@@ -1437,7 +1437,7 @@ textarea {
   font-size: 53px;
   line-height: 1.226em;
 }
-@media (max-width: 1400px) {
+@media (min-width: 1400px) {
   .cs_fs_53 {
     font-size: 50px;
   }
@@ -3684,9 +3684,7 @@ select.cs_insurance_input {
   height: 100vh;
 }
 
-.cs_page_heading.cs_style_1 {
-  padding: 152px 0 145px;
-}
+
 @media (max-width: 991px) {
   .cs_page_heading.cs_style_1 {
     padding: 100px 0;
@@ -8190,7 +8188,7 @@ select.cs_insurance_input {
   bottom: 0;
   left: 0;
 }
-.cs_iconbox.cs_style_1 .cs_iconbox_icon {
+.cs_iconbox.cs_style_2 .cs_iconbox_icon {
   height: 60px;
   width: 60px;
   padding: 15px;
@@ -10081,3 +10079,46 @@ label {
   border-bottom: 2px solid var(--accent);
 }
 
+
+
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 90% !important;
+  }
+.cs_case_study.cs_style_1 .cs_case_study_thumb{
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+}
+
+@media (min-width: 1600px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 84% !important;
+  }
+.cs_case_study.cs_style_1 .cs_case_study_thumb{
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}
+
+
+}
+@media (min-width: 1920px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 88% !important;
+  }
+  
+  .cs_main_header .container-fluid {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.service-insurance-hearo-image{
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+}
